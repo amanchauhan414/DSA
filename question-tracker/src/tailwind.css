@@ -1,0 +1,93 @@
+/* styles/tailwind.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Additional custom styles go here */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7fafc; /* Replace with your desired background color */
+}
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  background-color: #ffffff; /* Replace with your desired background color */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+  font-size: 1.875rem; /* Equivalent to text-3xl in Tailwind */
+  font-weight: 600; /* Equivalent to font-semibold in Tailwind */
+  color: #2d3748; /* Equivalent to text-gray-800 in Tailwind */
+}
+
+form {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-width: 2px;
+  border-radius: 1.5rem; /* Equivalent to rounded in Tailwind */
+}
+
+button {
+  background-color: #38a169; /* Equivalent to bg-green-500 in Tailwind */
+  color: #ffffff;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem; /* Equivalent to text-lg in Tailwind */
+  border-radius: 0.25rem; /* Equivalent to rounded in Tailwind */
+  transition: background-color 0.3s ease; /* Equivalent to hover:bg-green-600 in Tailwind */
+}
+
+button:hover {
+  background-color: #2f855a; /* Equivalent to hover:bg-green-600 in Tailwind */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border-bottom: 2px solid #e2e8f0; /* Equivalent to border-b-2 border-gray-300 in Tailwind */
+  padding: 1rem;
+}
+
+li:last-child {
+  border: 0;
+}
+
+strong {
+  font-weight: 600; /* Equivalent to font-semibold in Tailwind */
+  color: #2d3748; /* Equivalent to text-gray-800 in Tailwind */
+}
+
+/* DatePicker styles (customize based on your DatePicker library) */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
